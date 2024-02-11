@@ -116,7 +116,7 @@
           <div class="icon"> <i class="fas fa-user"></i>
           </div>
           <h3 class="mb-3">علي حسين</h3>
-          <p class="mb-4">ولي أمر</p> <a class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#check">مشاهدة التفاصيل <i class="las la-arrow-right ms-1"></i></a>
+          <p class="mb-4">طالب</p> <a class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#check">مشاهدة التفاصيل <i class="las la-arrow-right ms-1"></i></a>
         </div>
       </div>
 
@@ -260,11 +260,11 @@
   </div>
 </div>
 
-<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+<div class="modal applyLoanModal fade" id="check" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header border-bottom-0">
-        <h4 class="modal-title" id="exampleModalLabel">تقديم طلب استئذان</h4>
+        <h4 class="modal-title" id="exampleModalLabel">تفاصيل الطلب</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -273,42 +273,33 @@
             <div class="col-lg-12 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_amount" class="form-label">اسم الطالب الرباعي</label>
-                <input type="text" class="form-control shadow-none" id="loan_amount" placeholder="">
+                <input disabled type="text" class="form-control shadow-none" id="loan_amount" value="محمد حسن علي الغامدي">
               </div>
             </div>
             <div class="col-lg-4 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_full_name" class="form-label">رقم السجل المدني</label>
-                <input type="number" class="form-control shadow-none" placeholder="10xxxxxxxx" id="loan_full_name">
+                <input type="number" class="form-control shadow-none" vlaue="1043535354" id="loan_full_name" disabled>
               </div>
             </div>
             <div class="col-lg-4 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_full_name" class="form-label">الصف</label>
-                <select class="form-select form-select-lg shadow-none form-control" aria-label=".form-select-sm example">
-                  <option selected>اختار من القائمة</option>
-                  <option value="1">رابع إبتدائي</option>
-                  <option value="2">خامس إبتدائي</option>
-                  <option value="3">سادس إبتدائي</option>
-                  <option value="4">أول متوسط</option>
-                  <option value="5">ثاني متوسط</option>
-                  <option value="6">ثالث متوسط</option>
-                  <option value="7">أول ثانوي</option>
-                  <option value="8">ثاني ثانوي</option>
-                  <option value="9">ثالث ثانوي</option>
+                <select class="form-select form-select-lg shadow-none form-control" aria-label=".form-select-sm example" disabled>
+                  <option selected>سادس إبتدائي</option>
                 </select>
               </div>
             </div>
             <div class="col-lg-4 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_email_address" class="form-label">التاريخ</label>
-                <input type="email" class="form-control shadow-none" id="loan_email_address" placeholder="8/8/1445">
+                <input type="date" class="form-control shadow-none" id="loan_email_address" value="8/8/1445" disabled>
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_email_address" class="form-label">سبب الإستئذان</label>
-                <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="2"></textarea> 
+                <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" value="مراجعة المركز الصحي " rows="2"></textarea disabled> 
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
@@ -318,7 +309,9 @@
             </div>
             </div>
             <div class="col-lg-12">
-               <a type="submit1" data-bs-dismiss="modal" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#perS">تقديم الطلب</a>
+               <a type="submit1" data-bs-dismiss="modal" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#perS">موالفقة على الطلب</a>
+
+               <a type="submit1" data-bs-dismiss="modal" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#perS">رفض الطلب</a>
             </div>
           </div>
         </form>
